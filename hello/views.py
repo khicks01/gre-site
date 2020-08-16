@@ -8,7 +8,7 @@ def index(request):
     subscription_entry = Subscribe()
     context = {}
     context['form'] = SubscribeForm()
-    if request.GET:
-        subscription_entry.email = request.GET[('subscription_field')]
+    if request.POST:
+        subscription_entry.email = request.POST[('subscription_field')]
         subscription_entry.save()
     return render(request, "index.html", context)
