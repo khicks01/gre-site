@@ -13,7 +13,7 @@ def index(request):
     if request.POST:
         subscription_entry.email = request.POST['subscription_field']
         subscription_entry.save()
-    return HttpResponseRedirect(request, "index.html", context)
+    return render(request, "index.html", context)
 
 
 def db(request):
