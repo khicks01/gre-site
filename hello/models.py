@@ -3,3 +3,8 @@ from django.db import models
 # Create your models here.
 class Greeting(models.Model):
     when = models.DateTimeField("date created", auto_now_add=True)
+
+class Subscribe(models.Model):
+    email = models.EmailField()
+    date_added = models.DateTimeField("date added", auto_now_add=True)
+    
