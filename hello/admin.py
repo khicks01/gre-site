@@ -4,4 +4,10 @@ from .models import Subscribe
 
 # Register your models here.
 
-admin.site.register(Subscribe)
+
+
+class SubscribeAdmin(admin.ModelAdmin):
+    list_display = ('email', 'date_added')
+
+
+admin.site.register(Subscribe, SubscribeAdmin)
