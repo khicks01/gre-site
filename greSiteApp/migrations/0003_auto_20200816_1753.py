@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hello', '0002_auto_20200816_1408'),
+        ('greSiteApp', '0002_auto_20200816_1408'),
     ]
 
     operations = [
